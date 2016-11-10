@@ -14,6 +14,8 @@
 		38CB6D3B1CC4D9E000ECAAFB /* backdemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38CB6D391CC4D9E000ECAAFB /* backdemo.xcdatamodeld */; };
 		38CB6D3D1CC4D9E000ECAAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CB6D3C1CC4D9E000ECAAFB /* Assets.xcassets */; };
 		38CB6D401CC4D9E000ECAAFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CB6D3E1CC4D9E000ECAAFB /* LaunchScreen.storyboard */; };
+		38CB6D4A1CC4DA8000ECAAFB /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB6D481CC4DA8000ECAAFB /* SessionViewController.m */; };
+		38CB6D4B1CC4DA8000ECAAFB /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38CB6D491CC4DA8000ECAAFB /* SessionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		38CB6D3C1CC4D9E000ECAAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CB6D3F1CC4D9E000ECAAFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38CB6D411CC4D9E000ECAAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CB6D471CC4DA8000ECAAFB /* SessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionViewController.h; sourceTree = "<group>"; };
+		38CB6D481CC4DA8000ECAAFB /* SessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionViewController.m; sourceTree = "<group>"; };
+		38CB6D491CC4DA8000ECAAFB /* SessionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,9 @@
 		38CB6D211CC4D9E000ECAAFB = {
 			isa = PBXGroup;
 			children = (
+				38CB6D471CC4DA8000ECAAFB /* SessionViewController.h */,
+				38CB6D481CC4DA8000ECAAFB /* SessionViewController.m */,
+				38CB6D491CC4DA8000ECAAFB /* SessionViewController.xib */,
 				38CB6D2C1CC4D9E000ECAAFB /* backdemo */,
 				38CB6D2B1CC4D9E000ECAAFB /* Products */,
 			);
@@ -113,6 +121,7 @@
 				TargetAttributes = {
 					38CB6D291CC4D9E000ECAAFB = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = SSW2MT896X;
 					};
 				};
 			};
@@ -140,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CB6D401CC4D9E000ECAAFB /* LaunchScreen.storyboard in Resources */,
+				38CB6D4B1CC4DA8000ECAAFB /* SessionViewController.xib in Resources */,
 				38CB6D3D1CC4D9E000ECAAFB /* Assets.xcassets in Resources */,
 				38CB6D381CC4D9E000ECAAFB /* Main.storyboard in Resources */,
 			);
@@ -154,6 +164,7 @@
 			files = (
 				38CB6D351CC4D9E000ECAAFB /* ViewController.m in Sources */,
 				38CB6D321CC4D9E000ECAAFB /* AppDelegate.m in Sources */,
+				38CB6D4A1CC4DA8000ECAAFB /* SessionViewController.m in Sources */,
 				38CB6D2F1CC4D9E000ECAAFB /* main.m in Sources */,
 				38CB6D3B1CC4D9E000ECAAFB /* backdemo.xcdatamodeld in Sources */,
 			);
@@ -265,9 +276,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SSW2MT896X;
 				INFOPLIST_FILE = backdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iBoss.backdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safeguard.inspection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -276,9 +288,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SSW2MT896X;
 				INFOPLIST_FILE = backdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iBoss.backdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safeguard.inspection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -302,6 +315,7 @@
 				38CB6D461CC4D9E000ECAAFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

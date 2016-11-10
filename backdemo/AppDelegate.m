@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SessionViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+     SessionViewController *menuVC = [[SessionViewController alloc] initWithNibName:@"SessionViewController" bundle:nil];
+    UINavigationController *contentNavigationController = [[UINavigationController alloc] initWithRootViewController:menuVC];
+    
+    self.window.rootViewController = contentNavigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
